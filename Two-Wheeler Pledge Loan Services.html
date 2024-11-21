@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Wheeler Pledge Loan Services - Shree Lakshmi Pawn Brokers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Add any additional custom styles here */
+    </style>
+</head>
+<body class="min-h-screen bg-white text-gray-900">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-gray-100 bg-opacity-90 backdrop-blur-md border-b border-red-800">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://shreelakshmipawnbrokers.com/shree-lakshmi-pawn-brokers-favicon.png" alt="Shree Lakshmi Pawn Brokers Logo" width="140" height="40" class="h-8 w-auto">
+                    <nav class="hidden md:flex ml-6">
+                        <ul class="flex space-x-4">
+                            <li><a href="#" class="text-base font-medium hover:text-red-500 transition-colors">Home</a></li>
+                            <li class="relative group">
+                                <button class="text-base font-medium bg-transparent hover:bg-red-800 transition-colors">Services</button>
+                                <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-gray-950 text-white hidden group-hover:block">
+                                    <a href="#" class="block px-4 py-2 text-sm hover:bg-red-800 transition-colors">Two-Wheeler Pledge Loan</a>
+                                    <a href="#" class="block px-4 py-2 text-sm hover:bg-red-800 transition-colors">Scooter Pledge Loan</a>
+                                    <a href="#" class="block px-4 py-2 text-sm hover:bg-red-800 transition-colors">Car Pledge Loan</a>
+                                </div>
+                            </li>
+                            <li><a href="#" class="text-base font-medium hover:text-red-500 transition-colors">About Us</a></li>
+                            <li><a href="#" class="text-base font-medium hover:text-red-500 transition-colors">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="apply-now-btn" class="bg-red-500 hover:bg-red-600 text-white transition-colors px-4 py-2 rounded-md text-sm font-medium hidden md:inline-flex">
+                        Apply Now
+                    </button>
+                    <button id="mobile-menu-btn" class="md:hidden">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-red-800">Home</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-red-800">Two-Wheeler Pledge Loan</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-red-800">Scooter Pledge Loan</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-red-800">Car Pledge Loan</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-red-800">About Us</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-red-800">Contact</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-300">
+                <div class="px-2">
+                    <button id="mobile-apply-now-btn" class="w-full bg-red-500 hover:bg-red-600 text-white transition-colors px-4 py-2 rounded-md text-sm font-medium">
+                        Apply Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Hero Section with Image -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-red-600">Two-Wheeler Pledge Loan Services in Bangalore</h1>
+                    <p class="text-xl text-gray-700 mb-8">Fast, secure, and hassle-free financing for your bikes and scooters. Get the financial support you need without compromising on your vehicle ownership.</p>
+                    <button class="bg-red-500 hover:bg-red-600 text-white transition-colors px-6 py-3 rounded-md text-lg font-medium" onclick="openPopup()">
+                        Apply Now
+                    </button>
+                </div>
+                <div class="order-first md:order-last">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Two-Wheeler Pledge Loan" width="600" height="400" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Understanding Two-Wheeler Pledge Loans Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-red-600">Understanding Two-Wheeler Pledge Loans</h2>
+            <p class="text-gray-700 mb-4">
+                A two-wheeler pledge loan, also known as a bike loan or motorcycle loan, is a secured loan where you use your two-wheeler as collateral. This type of loan offers a quick and convenient way to access funds without selling your vehicle. At Shree Lakshmi Pawn Brokers, we specialize in providing hassle-free two-wheeler pledge loans in Bangalore, catering to the diverse financial needs of bike and scooter owners.
+            </p>
+            <p class="text-gray-700 mb-4">
+                Our two-wheeler pledge loan service is designed to offer you financial flexibility while ensuring the safety and security of your vehicle. Whether you need funds for a personal emergency, business expansion, or any other purpose, our loan process is streamlined to provide you with quick access to cash without the lengthy approval processes associated with traditional loans.
+            </p>
+            <div class="bg-white border-red-800 rounded-lg shadow-md">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-red-600 flex items-center">
+                        <i data-lucide="bike" class="mr-2 h-6 w-6"></i>
+                        Two-Wheeler Pledge Loan Features
+                    </h3>
+                    <p class="text-gray-700 mb-4">Discover the benefits of our two-wheeler pledge loans</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            Loan up to 60% of your two-wheeler's value
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            Competitive interest rates starting from 5% per month
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            Flexible repayment terms up to 12 months
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            No hidden charges or prepayment penalties
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            Secure storage of your vehicle during the loan period
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-red-600">The Advantages of Choosing Shree Lakshmi Pawn Brokers</h2>
+            <p class="text-gray-700 mb-4">
+                When it comes to two-wheeler pledge loans in Bangalore, Shree Lakshmi Pawn Brokers stands out as a trusted and reliable partner. Our years of experience in the industry have allowed us to refine our services to meet the unique needs of our clients. Here's why choosing us for your two-wheeler pledge loan makes sense:
+            </p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white border-red-800 rounded-lg shadow-md">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-red-600 flex items-center">
+                            <i data-lucide="shield" class="mr-2 h-6 w-6"></i>
+                            No Credit Checks
+                        </h3>
+                        <p class="text-sm text-gray-700">We don't perform credit checks. Our loans are based solely on your two-wheeler's value, making it easier for you to get financial assistance regardless of your credit history.</p>
+                    </div>
+                </div>
+                <div class="bg-white border-red-800 rounded-lg shadow-md">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-red-600 flex items-center">
+                            <i data-lucide="clock" class="mr-2 h-6 w-6"></i>
+                            Quick Disbursal
+                        </h3>
+                        <p class="text-sm text-gray-700">Get your loan amount disbursed within hours of approval. We understand that time is crucial when you need financial support, and our process is designed for speed and efficiency.</p>
+                    </div>
+                </div>
+                <div class="bg-white border-red-800 rounded-lg shadow-md">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-red-600 flex items-center">
+                            <i data-lucide="file-text" class="mr-2 h-6 w-6"></i>
+                            Minimal Documentation
+                        </h3>
+                        <p class="text-sm text-gray-700">We've streamlined our process to require only essential documents, making the application process quick and hassle-free. Less paperwork means faster approval and disbursal.</p>
+                    </div>
+                </div>
+                <div class="bg-white border-red-800 rounded-lg shadow-md">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-red-600 flex items-center">
+                            <i data-lucide="percent" class="mr-2 h-6 w-6"></i>
+                            Competitive Rates
+                        </h3>
+                        <p class="text-sm text-gray-700">Enjoy some of the most competitive interest rates in the market, ensuring that you get the best value for your two-wheeler pledge. Our transparent pricing means no surprises.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loan Process Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-red-600">Our Two-Wheeler Pledge Loan Process</h2>
+            <p class="text-gray-700 mb-4">
+                At Shree Lakshmi Pawn Brokers, we've simplified the loan process to ensure you can access funds quickly and easily. Our streamlined approach is designed with your convenience in mind, making it possible to get the financial support you need without unnecessary delays or complications.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white border-red-800 rounded-lg shadow-md">
+                    <div class="p-6">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="p-3 rounded-full bg-red-900 mb-4">
+                                <i data-lucide="file-text" class="h-6 w-6 text-red-500"></i>
+                            </div>
+                            <h3 class="font-semibold mb-2 text-red-600">Apply</h3>
+                            <p class="text-sm text-gray-700">Fill out our simple online or in-person application with basic details about you and your two-wheeler.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border-red-800 rounded-lg shadow-md">
+                    <div class="p-6">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="p-3 rounded-full bg-red-900 mb-4">
+                                <i data-lucide="bike" class="h-6 w-6 text-red-500"></i>
+                            </div>
+                            <h3 class="font-semibold mb-2 text-red-600">Evaluate</h3>
+                            <p class="text-sm text-gray-700">Our experts assess your two-wheeler's current market value to determine the maximum loan amount.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border-red-800 rounded-lg shadow-md">
+                    <div class="p-6">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="p-3 rounded-full bg-red-900 mb-4">
+                                <i data-lucide="dollar-sign" class="h-6 w-6 text-red-500"></i>
+                            </div>
+                            <h3 class="font-semibold mb-2 text-red-600">Approve</h3>
+                            <p class="text-sm text-gray-700">Get instant approval and a competitive loan offer based on your vehicle's value.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border-red-800 rounded-lg shadow-md">
+                    <div class="p-6">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="p-3 rounded-full bg-red-900 mb-4">
+                                <i data-lucide="clock" class="h-6 w-6 text-red-500"></i>
+                            </div>
+                            <h3 class="font-semibold mb-2 text-red-600">Disburse</h3>
+                            <p class="text-sm text-gray-700">Once approved, receive your loan amount within hours, giving you quick access to funds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eligibility and Documentation Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-red-600">Eligibility and Documentation</h2>
+            <p class="text-gray-700 mb-4">
+                We've kept our eligibility criteria simple and our documentation requirements minimal to make the loan process as smooth as possible. Here's what you need to know:
+            </p>
+            <h3 class="text-xl font-semibold mb-4 text-red-600">Eligibility Criteria</h3>
+            <ul class="list-disc pl-6 mb-6 text-gray-700">
+                <li>You must be the legal owner of the two-wheeler</li>
+                <li>The two-wheeler should be in good condition and roadworthy</li>
+                <li>The vehicle should be free from any existing loans or legal disputes</li>
+                <li>You must be at least 18 years old and a resident of Bangalore</li>
+            </ul>
+            <h3 class="text-xl font-semibold mb-4 text-red-600">Required Documents</h3>
+            <div class="bg-white border-red-800 rounded-lg shadow-md">
+                <div class="p-6">
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            Original RC (Registration Certificate) of the two-wheeler
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            Valid insurance policy document
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            Two passport size photographs
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            ID proof (Aadhar Card, PAN Card, or Voter ID)
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            Address proof (if different from ID proof)
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="mr-2 h-4 w-4 text-red-500"></i>
+                            NOC (No Objection Certificate) from the financier (if the vehicle was purchased on loan)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-red-600">Frequently Asked Questions</h2>
+            <p class="text-gray-700 mb-4">
+                We understand that you may have questions about our two-wheeler pledge loan services. Here are answers to some of the most common queries we receive:
+            </p>
+            <div class="space-y-4" id="faq-accordion">
+                <div class="border-red-800 border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-red-600 font-semibold focus:outline-none">
+                        <span>How much loan can I get against my two-wheeler?</span>
+                        <i data-lucide="chevron-down" class="h-5 w-5 transform transition-transform duration-200"></i>
+                    </button>
+                    <div class="p-4 bg-gray-50 hidden">
+                        <p class="text-gray-700">
+                            You can get a loan of up to 60% of your two-wheeler's current market value. The exact amount depends on factors such as the vehicle's age, condition, and market demand. Our expert evaluators will assess your vehicle to determine the maximum loan amount you're eligible for.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-red-800 border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-red-600 font-semibold focus:outline-none">
+                        <span>What happens to my two-wheeler during the loan period?</span>
+                        <i data-lucide="chevron-down" class="h-5 w-5 transform transition-transform duration-200"></i>
+                    </button>
+                    <div class="p-4 bg-gray-50 hidden">
+                        <p class="text-gray-700">
+                            Your two-wheeler will be securely stored in our designated parking facility. We ensure its safety and proper maintenance throughout the loan period. Our storage facilities are equipped with 24/7 security and protection against environmental factors to keep your vehicle in the same condition as when you pledged it.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-red-800 border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-red-600 font-semibold focus:outline-none">
+                        <span>Can I repay the loan early?</span>
+                        <i data-lucide="chevron-down" class="h-5 w-5 transform transition-transform duration-200"></i>
+                    </button>
+                    <div class="p-4 bg-gray-50 hidden">
+                        <p class="text-gray-700">
+                            Yes, you can repay the loan at any time before the due date. We do not charge any prepayment penalties, so you can clear your loan whenever you're ready. Early repayment can help you save on interest charges and get your vehicle back sooner.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-red-800 border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-red-600 font-semibold focus:outline-none">
+                        <span>How long does the loan approval process take?</span>
+                        <i data-lucide="chevron-down" class="h-5 w-5 transform transition-transform duration-200"></i>
+                    </button>
+                    <div class="p-4 bg-gray-50 hidden">
+                        <p class="text-gray-700">
+                            Our loan approval process is quick and efficient. In most cases, you can get approval within 30 minutes to an hour, provided all required documents are in order. We understand the importance of timely financial assistance and strive to make the process as swift as possible.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-red-800 border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-red-600 font-semibold focus:outline-none">
+                        <span>Do you check credit scores?</span>
+                        <i data-lucide="chevron-down" class="h-5 w-5 transform transition-transform duration-200"></i>
+                    </button>
+                    <div class="p-4 bg-gray-50 hidden">
+                        <p class="text-gray-700">
+                            No, we do not perform credit checks. Our loans are based on the value of your two-wheeler, making it easier for you to get financial assistance regardless of your credit history. This makes our two-wheeler pledge loans an excellent option for those who may have difficulty obtaining traditional loans due to credit issues.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-6 text-red-600">Ready to Get Started?</h2>
+            <p class="text-gray-700 mb-4">
+                If you're in need of quick financial assistance and own a two-wheeler, our pledge loan service could be the perfect solution for you. With competitive rates, a simple application process, and fast approval, we're here to help you overcome your financial challenges.
+            </p>
+            <div class="bg-red-900 text-white border-red-800 rounded-lg shadow-md">
+                <div class="p-6">
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="mb-4 md:mb-0">
+                            <h3 class="text-xl font-semibold mb-2 text-white">Apply for a Two-Wheeler Pledge Loan Today</h3>
+                            <p class="text-gray-200">Experience quick approval, competitive rates, and flexible terms with Shree Lakshmi Pawn Brokers</p>
+                        </div>
+                        <button onclick="openPopup()" class="bg-white text-red-900 hover:bg-gray-200 transition-colors px-6 py-3 rounded-md text-lg font-medium">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-900 py-12 border-t border-red-800">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-red-600">About Shree Lakshmi Pawn Brokers</h3>
+                    <p class="text-sm text-gray-700">Shree Lakshmi Pawn Brokers offers hassle-free vehicle financing solutions for bikes and two-wheelers with competitive rates and quick approvals in Bangalore. With years of experience, we've become a trusted name in two-wheeler pledge loans, providing our customers with reliable and efficient financial services.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-red-600">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-sm text-gray-700 hover:text-red-500 transition-colors">Home</a></li>
+                        <li><a href="#" class="text-sm text-gray-700 hover:text-red-500 transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-sm text-gray-700 hover:text-red-500 transition-colors">Services</a></li>
+                        <li><a href="#" class="text-sm text-gray-700 hover:text-red-500 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-red-600">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm text-gray-700 hover:text-red-500 transition-colors">Two-Wheeler Pledge Loan</a></li>
+                        <li><a href="#" class="text-sm text-gray-700 hover:text-red-500 transition-colors">Scooter Pledge Loan</a></li>
+                        <li><a href="#" class="text-sm text-gray-700 hover:text-red-500 transition-colors">Car Pledge Loan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-red-600">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i data-lucide="phone" class="h-4 w-4 mr-2 text-red-500"></i> +91-9741207790
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i data-lucide="mail" class="h-4 w-4 mr-2 text-red-500"></i> shreelakshmipawnbroker@gmail.com
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i data-lucide="map-pin" class="h-4 w-4 mr-2 text-red-500"></i> 1372/C, 32nd E Cross Rd, 4th T Block East, Jayanagar, Bengaluru, Karnataka 560041
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-red-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-700">&copy; <span id="current-year"></span> Shree Lakshmi Pawn Brokers. All rights reserved.</p>
+                    <div class="flex space-x-4 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-700 hover:text-red-500 transition-colors">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-red-500 transition-colors">
+                            <i data-lucide="instagram" class="h-5 w-5"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-red-500 transition-colors">
+                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-red-500 transition-colors">
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup Form -->
+    <div id="popup-form" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full">
+            <h2 class="text-2xl font-bold mb-4 text-red-600">Apply for a Loan</h2>
+            <form id="loan-application-form">
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                        <input type="tel" id="phone" name="phone" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="3" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500"></textarea>
+                    </div>
+                    <div class="flex justify-end space-x-4">
+                        <button type="button" onclick="closePopup()" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Cancel</button>
+                        <button type="submit" class="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+
+        // FAQ accordion
+        const faqItems = document.querySelectorAll('#faq-accordion > div');
+        faqItems.forEach(item => {
+            const button = item.querySelector('button');
+            const content = item.querySelector('div');
+            button.addEventListener('click', () => {
+                content.classList.toggle('hidden');
+                const icon = button.querySelector('i');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Popup form
+        function openPopup() {
+            document.getElementById('popup-form').classList.remove('hidden');
+        }
+
+        function closePopup() {
+            document.getElementById('popup-form').classList.add('hidden');
+        }
+
+        // Form submission
+        document.getElementById('loan-application-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const email = formData.get('email');
+            const message = formData.get('message');
+
+            const whatsappMessage = `New Loan Application:
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Message: ${message}`;
+
+            const whatsappUrl = `https://wa.me/919902555786?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank');
+            closePopup();
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
